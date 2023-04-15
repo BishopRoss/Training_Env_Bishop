@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+    <body>
+        <p>Click the button to create and display two variables</p>
+        <button onclick="myVariables()">Click Me to Dispay Variables</button>
+        <p id="number"></p>
+        <p id="string"></p>
+        <p id="boolean"></p>
+        <p id="message"></p>
+        <button onclick="stockLevel()">Click Me to Check Stock Levels</button>
+        <p id="stockStatus"></p>
+        
+        <script>
+            function myVariables() {
+                var ntotalAmount=1000;
+                var sService="Accountancy";
+                var message="I love you";
+                document.getElementById("number").innerHTML="Amount: " +ntotalAmount;
+                document.getElementById("string").innerHTML="Service: " +sService;
+                document.getElementById("boolean").innerHTML=(ntotalAmount==1000);
+                document.getElementById("message").innerHTML=(message);
+            }
+            function stockLevel() {
+                var stock=5;
+                var reorder=10
+                if(stock<reorder){
+                    Alert="Low";
+                }
+                else if(stock < 100){
+                    Alert="Good"
+                }
+                else{
+                    Alert="High"
+                }
+                document.getElementById("stockStatus").innerHTML=Alert+ "I LOVE YOU MORE";
+            }
+        </script>
+    </body>
+</html>
