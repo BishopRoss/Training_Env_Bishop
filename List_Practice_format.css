@@ -49,7 +49,7 @@ p{
 .c4{
     width: 170px;
     margin: 0 auto;
-    list-style-type: lower-alpha;
+    list-style-type:lower-alpha;
     /*background-color: rgb(59, 150, 86);*/
     font-size: 20px;
     list-style-position: outside;

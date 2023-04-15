@@ -1,0 +1,33 @@
+table, td, th {
+    border-spacing: 0px;
+}
+th {
+    background-color: darkblue;
+    color: white;
+}
+table{
+    width: 50%;
+}
+tr.head th:first-child {
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+tr.head th:last-child {
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+tr.even {
+    background-color: lightgrey;
+}
+td {
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    border-right: 1px solid green;
+    border-left: 1px solid green;
+}
+th {
+    height: 30px;
+}
+.c1 {
+    text-align: right;
+}
