@@ -1,12 +1,12 @@
 <html>
     <head>
-    <title>PHP Test</test>
+    <title>PHP Test</title>
     </head>
     <body>
         <?php
         Print"Connecting...";//like echo print is also used to output a string
         echo "<br>";
-        $con = mysqli_connect("localhost","root","mysql");
+        $con = mysqli_connect("localhost","root");
         if(!$con)
         {
             die('Could not connect:'.mysqli_error());
